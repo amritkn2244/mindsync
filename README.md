@@ -8,13 +8,13 @@ MindSync is a full-stack wellness platform built around a single idea: showing u
 
 ## Features
 
-- **Mood check-ins** — one-tap daily mood, energy, and sleep tracking with optional trigger tagging
-- **Journals** — private daily entries with Gemini sentiment analysis and a gentle cognitive reframe
-- **AI coaching** — a warm, non-clinical chat companion that keeps conversation history per account
-- **Insights & analytics** — AI summaries, recommendations, and trigger patterns computed from real check-in data
-- **Guided breathing** — Box, 4-7-8, and Coherent sessions with focus timers
-- **Secure authentication** — JWT sessions with bcrypt-hashed passwords
-- **Responsive glass UI** — obsidian glassmorphic theme across 11 pages, fully mobile-aware
+- **Mood check-ins** - one-tap daily mood, energy, and sleep tracking with optional trigger tagging
+- **Journals** - private daily entries with Gemini sentiment analysis and a gentle cognitive reframe
+- **AI coaching** - a warm, non-clinical chat companion that keeps conversation history per account
+- **Insights & analytics** - AI summaries, recommendations, and trigger patterns computed from real check-in data
+- **Guided breathing** - Box, 4-7-8, and Coherent sessions with focus timers
+- **Secure authentication** - JWT sessions with bcrypt-hashed passwords
+- **Responsive glass UI** - obsidian glassmorphic theme across 11 pages, fully mobile-aware
 
 ## Tech Stack
 
