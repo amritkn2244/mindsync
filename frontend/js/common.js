@@ -7,7 +7,7 @@
 
   const API_ORIGINS = {
     local: "http://127.0.0.1:8000",
-    production: "https://mindsync-api.onrender.com"
+    production: "https://mindsync-4aap.onrender.com"
   };
 
   function resolveApiBase() {
