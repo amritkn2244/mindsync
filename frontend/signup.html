@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create your MindSync account — mood check-ins, journaling and guided breathing in one private, gentle workspace." />
+  <title>Create account · MindSync</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body id="top" data-page="signup">
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-content">
+      <a class="nav-brand" href="index.html">
+        <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+        <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta" href="login.html">Log in →</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="page">
+        <div class="auth-card glass-card card-pad fade-up">
+          <div class="text-center mb-3">
+            <img class="nav-logo auth-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+          </div>
+          <div class="text-center">
+            <h1 style="font-family:var(--font-head);font-size:clamp(1.7rem,4vw,2.3rem);letter-spacing:-1.5px;line-height:1.15;">
+              Create your account.
+            </h1>
+            <p class="auth-sub">
+              Mood check-ins, journaling and guided breathing in one calm space.
+              Everything stays on your device.
+            </p>
+          </div>
+
+          <form id="signupForm" class="stack" novalidate style="margin-top:30px;">
+            <div class="form-section" style="margin-bottom:0;">
+              <label class="field-label" for="fullName">Full name</label>
+              <input class="input" type="text" id="fullName" placeholder="e.g. Alex Doe"
+                autocomplete="name" required />
+            </div>
+            <div class="form-section" style="margin-bottom:0;">
+              <label class="field-label" for="signupEmail">Email</label>
+              <input class="input" type="email" id="signupEmail" name="email" placeholder="you@example.com"
+                autocomplete="email" required />
+            </div>
+            <div class="form-section" style="margin-bottom:0;">
+              <label class="field-label" for="signupPassword">Password</label>
+              <input class="input" type="password" id="signupPassword" name="password" placeholder="At least 8 characters"
+                autocomplete="new-password" required />
+            </div>
+            <div class="form-section" style="margin-bottom:0;">
+              <label class="field-label" for="signupConfirm">Confirm password</label>
+              <input class="input" type="password" id="signupConfirm" name="confirm" placeholder="Repeat your password"
+                autocomplete="new-password" required />
+              <p class="auth-field-hint">Use at least 8 characters. This account lives only on this device.</p>
+            </div>
+
+            <p class="auth-error" id="signupError"></p>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Create account →</button>
+          </form>
+
+          <div class="divider"></div>
+          <p class="muted text-center" style="font-size:.92rem;">
+            Already have an account? <a class="auth-link" href="login.html">Log in</a>
+          </p>
+          <p class="muted text-center mt-2" style="font-size:.8rem;opacity:.85;">
+            🔒 Made by Amrit Kumar Nayak — your account and notes never leave this device.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+          <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+        </div>
+        <p class="footer-description">
+          A private, gentle daily workspace for noticing how you feel and resetting when you need to.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="mood.html">Mood</a>
+          <a href="journal.html">Journal</a>
+          <a href="coach.html">Coach</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Understand</h3>
+        <div class="footer-links">
+          <a href="analytics.html">Analytics</a>
+          <a href="insights.html">Insights</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>©2026 MindSync - amrit2244</span>
+      <span>Made by Amrit Kumar Nayak · Wellness tools, not a diagnosis</span>
+    </div>
+  </footer>
+
+  <script src="js/common.js" defer></script>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>

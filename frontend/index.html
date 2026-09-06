@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MindSync — Mental wellness, one day at a time. Mood check-ins, journaling, guided breathing and reflective coaching in one gentle workspace." />
+  <title>MindSync — Mental wellness, one day at a time</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body id="top" data-page="index">
+
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="page-loader-card">
+      <div class="page-loader-glow"></div>
+      <img class="page-loader-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+      <div class="page-loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-content">
+      <a class="nav-brand" href="index.html">
+        <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+        <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-page-link>Home</a>
+        <a href="dashboard.html" data-page-link>Dashboard</a>
+        <a href="mood.html" data-page-link>Mood</a>
+        <a href="journal.html" data-page-link>Journal</a>
+        <a href="breathing.html" data-page-link>Breathing</a>
+        <a href="coach.html" data-page-link>Coach</a>
+        <a href="analytics.html" data-page-link>Analytics</a>
+        <a href="insights.html" data-page-link>Insights</a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-cta" href="dashboard.html">Open app →</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-links">
+      <a href="index.html" data-page-link>Home</a>
+      <a href="dashboard.html" data-page-link>Dashboard</a>
+      <a href="mood.html" data-page-link>Mood</a>
+      <a href="journal.html" data-page-link>Journal</a>
+      <a href="breathing.html" data-page-link>Breathing</a>
+      <a href="coach.html" data-page-link>Coach</a>
+      <a href="analytics.html" data-page-link>Analytics</a>
+      <a href="insights.html" data-page-link>Insights</a>
+    </div>
+    <a class="btn btn-primary" href="dashboard.html">Open app →</a>
+  </div>
+
+  <main>
+    <section class="hero" style="min-height:92vh;display:flex;align-items:center;padding:140px 0 80px;">
+      <div class="container">
+        <div class="hero-content fade-up" style="max-width:980px;">
+          <h1 style="font-family:var(--font-head);font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.05;letter-spacing:-3px;">
+            Your mind deserves <span class="gradient-text">space to breathe.</span>
+          </h1>
+          <p class="muted" style="max-width:720px;font-size:1.08rem;margin-top:26px;line-height:1.9;">
+            MindSync brings mood check-ins, journaling, guided breathing, reflective
+            coaching, and wellness insights into one gentle daily workspace.
+          </p>
+          <div id="authMemberBox" class="fade-in" style="display:none;">
+            <p class="muted" id="authMemberGreeting" style="font-size:1.08rem;margin-top:26px;line-height:1.9;"></p>
+            <div class="row" style="margin-top:18px;">
+              <a class="btn btn-primary" href="dashboard.html">Go to Dashboard →</a>
+              <a class="btn btn-secondary" href="mood.html">Log a mood check-in</a>
+            </div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;">
+            <a class="btn btn-primary" href="dashboard.html">Start your check-in →</a>
+            <a class="btn btn-secondary" href="breathing.html">Try a breathing session</a>
+          </div>
+          <div class="row" id="authMemberRow" style="margin-top:16px;">
+            <span class="muted" style="font-size:.85rem;">Already a member?</span>
+            <a class="auth-link" href="login.html">Log in</a>
+            <span class="muted" style="font-size:.85rem;">·</span>
+            <a class="auth-link" href="signup.html">Create account</a>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:60px;">
+          <div class="stat glass-card lift card-pad" style="min-width:170px;">
+            <h3 style="font-family:var(--font-head);font-size:1.5rem;margin-bottom:4px;">5</h3>
+            <p class="muted" style="font-size:.8rem;">Mood levels to notice</p>
+          </div>
+          <div class="stat glass-card lift card-pad" style="min-width:170px;">
+            <h3 style="font-family:var(--font-head);font-size:1.5rem;margin-bottom:4px;">3</h3>
+            <p class="muted" style="font-size:.8rem;">Guided breathing patterns</p>
+          </div>
+          <div class="stat glass-card lift card-pad" style="min-width:170px;">
+            <h3 style="font-family:var(--font-head);font-size:1.5rem;margin-bottom:4px;">100%</h3>
+            <p class="muted" style="font-size:.8rem;">Private — data stays on your device</p>
+          </div>
+        </div>
+
+        <div class="grid grid-3" style="margin-top:58px;">
+          <article class="glass-card card-pad card-tilt">
+            <div style="font-size:1.8rem;margin-bottom:14px;">🌸</div>
+            <h3>Notice</h3>
+            <p class="muted">Track mood, energy and triggers without turning wellness into a chore.</p>
+          </article>
+          <article class="glass-card card-pad card-tilt">
+            <div style="font-size:1.8rem;margin-bottom:14px;">🪶</div>
+            <h3>Reflect</h3>
+            <p class="muted">Write privately and turn patterns into useful reflections.</p>
+          </article>
+          <article class="glass-card card-pad card-tilt">
+            <div style="font-size:1.8rem;margin-bottom:14px;">🌬️</div>
+            <h3>Reset</h3>
+            <p class="muted">Use guided breathing and practical prompts when you need a pause.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+          <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+        </div>
+        <p class="footer-description">
+          A private, gentle daily workspace for noticing how you feel and resetting when you need to.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="mood.html">Mood</a>
+          <a href="journal.html">Journal</a>
+          <a href="breathing.html">Breathing</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Grow</h3>
+        <div class="footer-links">
+          <a href="coach.html">Coach</a>
+          <a href="analytics.html">Analytics</a>
+          <a href="insights.html">Insights</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>©2026 MindSync - amrit2244</span>
+      <span>Made by Amrit Kumar Nayak · Wellness tools, not a diagnosis</span>
+    </div>
+  </footer>
+
+  <script src="js/common.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

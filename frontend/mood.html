@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MindSync mood check-in — notice how you feel." />
+  <title>Mood · MindSync</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body id="top" data-page="mood">
+
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="page-loader-card">
+      <div class="page-loader-glow"></div>
+      <img class="page-loader-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+      <div class="page-loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <div class="nav-content">
+      <a class="nav-brand" href="index.html">
+        <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+        <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-page-link>Home</a>
+        <a href="dashboard.html" data-page-link>Dashboard</a>
+        <a href="mood.html" data-page-link>Mood</a>
+        <a href="journal.html" data-page-link>Journal</a>
+        <a href="breathing.html" data-page-link>Breathing</a>
+        <a href="coach.html" data-page-link>Coach</a>
+        <a href="analytics.html" data-page-link>Analytics</a>
+        <a href="insights.html" data-page-link>Insights</a>
+      </div>
+      <div class="nav-actions">
+          <a class="btn btn-primary nav-cta" href="dashboard.html">Dashboard</a>
+        </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-links">
+      <a href="index.html" data-page-link>Home</a>
+      <a href="dashboard.html" data-page-link>Dashboard</a>
+      <a href="mood.html" data-page-link>Mood</a>
+      <a href="journal.html" data-page-link>Journal</a>
+      <a href="breathing.html" data-page-link>Breathing</a>
+      <a href="coach.html" data-page-link>Coach</a>
+      <a href="analytics.html" data-page-link>Analytics</a>
+      <a href="insights.html" data-page-link>Insights</a>
+    </div>
+    <a class="btn btn-primary" href="dashboard.html">Dashboard</a>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="page">
+        <header class="page-header">
+          <h1>How are you feeling?</h1>
+          <p class="lead">No wrong answers. Notice, name it, and move on — about a minute of your time.</p>
+        </header>
+
+        <div class="grid grid-2-1">
+          <div class="stack">
+            <section class="glass-card card-pad">
+              <label class="field-label">Your mood right now</label>
+              <div class="emoji-picker" id="moodPicker"></div>
+            </section>
+
+            <section class="glass-card card-pad">
+              <label class="field-label">More detail</label>
+              <div class="range-row">
+                <div class="range-header">
+                  <span class="range-label">Energy</span>
+                  <span class="range-value" id="energyValue">3/5</span>
+                </div>
+                <input type="range" id="energySlider" min="1" max="5" step="1" value="3" />
+              </div>
+              <div class="range-row">
+                <div class="range-header">
+                  <span class="range-label">Sleep quality</span>
+                  <span class="range-value" id="sleepValue">3/5</span>
+                </div>
+                <input type="range" id="sleepSlider" min="1" max="5" step="1" value="3" />
+              </div>
+
+              <div class="form-section mt-2">
+                <label class="field-label">Anything influencing this?</label>
+                <div class="chip-list" id="triggerChips"></div>
+              </div>
+
+              <div class="form-section">
+                <label class="field-label">A line about how it feels (optional)</label>
+                <textarea class="textarea" id="moodNote" placeholder="e.g. Tired but calm. Work was heavy this morning, then I went for a walk…"></textarea>
+              </div>
+
+              <div class="glass-card" style="padding:16px 18px;border-radius:14px;">
+                <div class="row">
+                  <span style="font-size:1.7rem" id="previewEmoji">😐</span>
+                  <div class="muted" id="previewText" style="font-size:.9rem;flex:1"></div>
+                  <button class="btn btn-primary" id="saveMood" type="button">Save check-in</button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside id="history">
+            <section class="glass-card card-pad">
+              <div class="space-between mb-2">
+                <h3 style="margin:0;">History</h3>
+                <a class="btn btn-secondary btn-sm" href="analytics.html">Analytics →</a>
+              </div>
+              <div class="stack" id="moodHistory"></div>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img class="nav-logo" src="assets/mindsync logo black.png" alt="MindSync" />
+          <span class="nav-name"><strong>MindSync</strong><span>Mental Wellness</span></span>
+        </div>
+        <p class="footer-description">
+          A private, gentle daily workspace for noticing how you feel and resetting when you need to.
+        </p>
+      </div>
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="dashboard.html">Dashboard</a>
+          <a href="journal.html">Journal</a>
+          <a href="breathing.html">Breathing</a>
+          <a href="coach.html">Coach</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Understand</h3>
+        <div class="footer-links">
+          <a href="analytics.html">Analytics</a>
+          <a href="insights.html">Insights</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>©2026 MindSync - amrit2244</span>
+      <span>Made by Amrit Kumar Nayak · Wellness tools, not a diagnosis</span>
+    </div>
+  </footer>
+
+  <script src="js/common.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
