@@ -20,8 +20,8 @@ MindSync is a full-stack wellness platform built around a single idea: showing u
 
 | Layer | Technology |
 |---|---|
-| Backend | Python 3, FastAPI, SQLModel / SQLAlchemy |
-| Database | PostgreSQL on Neon (via `psycopg`) |
+| Backend | Python 3, FastAPI |
+| Database | PostgreSQL on Neon |
 | AI | Google Gemini API (`google-genai` SDK) |
 | Auth | PyJWT + passlib (bcrypt) |
 | Frontend | Vanilla ES6 JavaScript, HTML5, CSS3 |
